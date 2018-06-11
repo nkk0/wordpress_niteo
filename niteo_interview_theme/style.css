@@ -2,4 +2,301 @@
     Theme Name: Niteo Interview Theme
     Author: Niko Klanecek
     Description: A WordPress theme created for my Niteo interview.
+	Version: 1.0
 */
+
+/*
+ * Globals
+ */
+
+@media (min-width: 768px) {
+  .container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding-top: 0px;
+  width: 100%;
+  }
+}
+
+.container.body {
+  border-top: 1px solid #eee;
+  padding-top: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+a.read-more {
+	font-size: 14px;
+  color: #7290c1;
+}
+
+.blog-page-title {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.comment-reply-title {
+	font-size: 20px;
+}
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.custom-logo {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: #777;
+  font-size: 15px;
+}
+
+.site-name {
+  margin: 0;
+  color: #a9a9a9;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.site-name a {
+  color: #333;
+}
+
+.site-name a:hover {
+  text-decoration: none;
+  color: #888;
+}
+
+.blog-info {
+	padding-top: 26px;
+}
+
+.site-info {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  position: relative;
+}
+
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.blog-nav {
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  width: 50%;
+  padding-top: 32px;
+}
+
+.blog-nav li a {
+  color: #222;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.blog-nav li a:hover {
+  color: #888;
+}
+
+ul.menu {
+  float: right;
+}
+
+/*
+ * Blog name and description
+ */
+
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  padding-bottom: 25px;
+  padding-top: 35px;
+}
+
+.blog-post-title {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.blog-post-title a {
+    color: #222;
+}
+
+.blog-post-title a:hover {
+  text-decoration: none;
+  color: #444;
+}
+
+.not-last-post {
+  border-bottom: 1px solid #eee;
+}
+
+.blog-post p {
+  font-size: 16px;
+}
+
+/*
+ * Comments
+ */
+
+#respond {
+	border-top: 1px solid #eee;
+	padding-top: 15px;
+}
+.nocomments {
+	display: none;
+}
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * Pagination
+ */
+
+.pages {
+  padding-bottom: 10px;
+}
+.page-numbers.current {
+  font-weight: bold;
+}
+
+/*
+ * Mobile
+ */
+ 
+ #drop-button {
+  float:right;
+  margin-right:0px;
+  clear:left;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  margin-left: 150px;
+  width: auto;
+}
+ 
+@media (max-width: 769px) {
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.4;
+	}
+	.blog-masthead {
+		text-align: center;
+	}
+	.custom-logo {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: -10px;
+	}
+    .site-info {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.blog-nav {
+		float: none;
+    width: 100%;
+		margin: 0 auto;
+		display: block;
+		font-size: 16px;
+		padding: 5px 0 15px 0;
+	}
+	.blog-nav li {
+		float: none;
+		margin: auto;
+		display: inline-block;
+		padding: 10px 0 0 0;
+	}
+	nav {
+	  float: none;
+	  margin: auto;
+	  font-size: 18px;
+	  display: block;
+	  width: 100%;
+	}
+	.blog-nav li a {
+    color: #222;
+    font-size: 25px;
+    padding: 0 10px;
+	}
+  .dropdown-menu {
+    margin: auto;
+    width: auto;
+  }
+  #drop-button {
+    float: none;
+    margin: 0 auto;
+  }
+  .menu-main-menu-container ul {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+}
+
