@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
   <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="<?php echo get_bloginfo('description');?>">
-    <meta name="author" content="<?php echo get_bloginfo('name');?>">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
+    <meta name="author" content="<?php bloginfo('name'); ?>">
 
-    <title><?php if (is_singular()) {the_title();} else {echo get_bloginfo('name') . ' – ' . get_bloginfo('description');}?></title>
+    <title><?php if (is_singular()) {wp_title();} else {echo get_bloginfo('name') . ' – ' . get_bloginfo('description');}?></title>
 
     <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
 
@@ -26,7 +26,24 @@
         </div>
 
         <nav class="blog-nav">
-          <?php wp_list_pages('&title_li='); ?>
+          <?php 
+          $my_menu = wp_get_nav_menu_object( 'Main Menu' );
+          $number_of_menu_items = $my_menu->count;
+          ?>
+          <?php if ($number_of_menu_items > 3): ?>
+            <div class="dropdown">
+              <button id="drop-button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><span class="caret"></span></button>
+      
+              <?php wp_nav_menu(array(
+                  'menu'       => 'my_menu_name',
+                  'menu_class' => 'dropdown-menu',
+                  'container'  => '',
+              ));?>
+            </div>
+          <?php else: ?>
+            <?php wp_nav_menu(); ?>
+          <? endif; ?>
+
         </nav>
       </div>
     </div>
