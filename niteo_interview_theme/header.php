@@ -26,9 +26,11 @@
         </div>
 
         <nav class="blog-nav">
-          <?php 
-          $my_menu = wp_get_nav_menu_object( 'Main Menu' );
-          $number_of_menu_items = $my_menu->count;
+          <?php
+          //$my_menu = wp_get_nav_menu_object('Long Menu');
+          //$number_of_menu_items = $my_menu->count;
+          $count_pages = wp_count_posts('page');
+          $number_of_menu_items = $count_pages->publish;
           ?>
           <?php if ($number_of_menu_items > 3): ?>
             <div class="dropdown">
