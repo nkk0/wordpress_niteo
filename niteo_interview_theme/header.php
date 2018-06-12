@@ -6,7 +6,7 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="author" content="<?php bloginfo('name'); ?>">
 
-    <title><?php if (is_singular()) {wp_title();} else {echo get_bloginfo('name') . ' – ' . get_bloginfo('description');}?></title>
+    <title><?php if (is_singular() && wp_title()) {wp_title();} else if (is_singular() && (! wp_title())) {echo get_bloginfo('name');} else {echo get_bloginfo('name') . ' – ' . get_bloginfo('description');}?></title>
 
     <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
 
