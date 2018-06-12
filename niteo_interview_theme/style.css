@@ -179,6 +179,10 @@ ul.menu {
   font-size: 16px;
 }
 
+.sticky {
+  background: #fff; border: 1px solid black; padding: 5px;
+}
+
 /*
  * Comments
  */
@@ -236,6 +240,16 @@ ul.menu {
   position: absolute;
   margin-left: 150px;
   width: auto;
+}
+
+.caret {
+  display:none;
+}
+.btn{
+  border:0px solid transparent; /* this was 1px earlier */
+}
+.glyphicon {
+    font-size: 25px;
 }
  
 @media (max-width: 769px) {
@@ -299,4 +313,3 @@ ul.menu {
     position: relative;
   }
 }
-
