@@ -21,6 +21,7 @@
 .container.body {
   border-top: 1px solid #eee;
   padding-top: 0px;
+  word-wrap: break-word;
 }
 
 body {
@@ -180,7 +181,11 @@ ul.menu {
 }
 
 .sticky {
-  background: #fff; border: 1px solid black; padding: 5px;
+  background: #fff; border: 1px solid black; padding: 1px;
+}
+
+h2.sticky {
+  display:inline;
 }
 
 /*
