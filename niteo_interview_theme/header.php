@@ -34,7 +34,7 @@
           ?>
           <?php if ($number_of_menu_items > 3): ?>
             <div class="dropdown">
-              <button id="drop-button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><span class="caret"></span></button>
+              <button id="drop-button" class="btn btn-default dropdown-toggle btn-lg" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><span class="caret"></span></button>
       
               <?php wp_nav_menu(array(
                   'menu'       => 'my_menu_name',
