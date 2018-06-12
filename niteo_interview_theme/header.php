@@ -6,7 +6,8 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="author" content="<?php bloginfo('name'); ?>">
 
-    <title><?php if (is_singular() && wp_title()) {wp_title();} else if (is_singular() && (! wp_title())) {echo get_bloginfo('name');} else {echo get_bloginfo('name') . ' – ' . get_bloginfo('description');}?></title>
+    <title><?php if (is_home()) {echo get_bloginfo('name');} else {wp_title();}?>
+</title>
 
     <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
 
@@ -14,7 +15,6 @@
   </head>
 
   <body>
-
     <div class="blog-masthead">
       <div class="container">
         <div class="site-info">
@@ -27,19 +27,17 @@
 
         <nav class="blog-nav">
           <?php
-          //$my_menu = wp_get_nav_menu_object('Long Menu');
-          //$number_of_menu_items = $my_menu->count;
-          $count_pages = wp_count_posts('page');
-          $number_of_menu_items = $count_pages->publish;
+          $count_posts = wp_count_posts('page');
+          $number_of_menu_items = $count_posts->publish;
           ?>
           <?php if ($number_of_menu_items > 3): ?>
             <div class="dropdown">
-              <button id="drop-button" class="btn btn-default dropdown-toggle btn-lg" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><span class="caret"></span></button>
+              <button id="drop-button" class="btn btn-default dropdown-toggle btn-lg" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span><span class="caret"></span></button>
       
               <?php wp_nav_menu(array(
-                  'menu'       => 'my_menu_name',
-                  'menu_class' => 'dropdown-menu',
-                  'container'  => '',
+                'menu'       => 'my_menu_name',
+                'menu_class' => 'dropdown-menu',
+                'container'  => '',
               ));?>
             </div>
           <?php else: ?>
@@ -49,5 +47,4 @@
         </nav>
       </div>
     </div>
-
     <div class="container body">

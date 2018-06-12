@@ -11,10 +11,10 @@
 
 @media (min-width: 768px) {
   .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding-top: 0px;
-  width: 100%;
+    margin: 0 auto;
+    max-width: 740px;
+    padding-top: 0px;
+    width: 100%;
   }
 }
 
@@ -116,9 +116,7 @@ a.read-more {
 }
 
 .blog-nav {
-  float: right;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
   display: inline-block;
   width: 50%;
   padding-top: 32px;
@@ -134,8 +132,27 @@ a.read-more {
   color: #888;
 }
 
-ul.menu {
+.dropdown-menu ul,
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
   float: right;
+}
+
+.menu {
+  float: right;
+}
+
+.dropdown-menu ul li a {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.dropdown-menu ul li a:hover {
+  color: #222;
+  background-color: #eee;
 }
 
 /*
@@ -231,7 +248,7 @@ h2.sticky {
  * Mobile
  */
  
- #drop-button {
+#drop-button {
   float:right;
   margin-right:0px;
   clear:left;
@@ -245,6 +262,7 @@ h2.sticky {
   position: absolute;
   margin-left: 150px;
   width: auto;
+  word-wrap: break-word;
 }
 
 .caret {
@@ -271,11 +289,11 @@ h2.sticky {
 		margin-top: 10px;
 		margin-bottom: -10px;
 	}
-    .site-info {
-		float: none;
-		display: block;
-		margin: 0 auto;
-		width: 100%;
+  .site-info {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 	}
 	.blog-nav {
 		float: none;
@@ -285,36 +303,25 @@ h2.sticky {
 		font-size: 16px;
 		padding: 5px 0 15px 0;
 	}
-	.blog-nav li {
-		float: none;
-		margin: auto;
-		display: inline-block;
-		padding: 10px 0 0 0;
-	}
-	nav {
-	  float: none;
-	  margin: auto;
-	  font-size: 18px;
-	  display: block;
-	  width: 100%;
-	}
-	.blog-nav li a {
-    color: #222;
-    font-size: 25px;
-    padding: 0 10px;
-	}
-  .dropdown-menu {
-    margin: auto;
-    width: auto;
-  }
   #drop-button {
     float: none;
     margin: 0 auto;
   }
-  .menu-main-menu-container ul {
+  .dropdown-menu ul {
     float: none;
     display: inline-block;
     width: 100%;
     position: relative;
+  }
+  .menu {
+    margin: auto;
+	  width: 100%;
+  }
+  .menu ul {
+		margin: auto;
+		padding: 10px 0 0 0;
+  }
+  .menu ul li a {
+    font-size: 25px;
   }
 }
