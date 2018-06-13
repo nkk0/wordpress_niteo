@@ -274,6 +274,71 @@ h2.sticky {
 .glyphicon {
     font-size: 25px;
 }
+
+/*
+ * Comments
+ */
+ 
+.comments-title {
+  font-size: 18px;
+}
+
+.comment-reply-title {
+  font-size:18px;
+}
+
+#url,
+#email,
+#author {
+  width: 300px;
+}
+
+#comment {
+  width: 450px;
+  height: 80px;
+}
+
+.says {
+  display: none;
+}
+
+.comment-body div {
+  display: inline;
+}
+
+.comment-list cite {
+  font-size: 10px;
+}
+
+.comment-body {
+  margin-left: -10px;
+  width: 80%;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.comment-author {
+  float: left;
+  padding-right: 10px;
+}
+
+.comment-author img {
+  height: 70px;
+  width: 70px;
+}
+
+.comment {
+  padding-top: 20px;
+}
+
+.comment-list li {
+  list-style-type: none;
+}
+
+label {
+  font-size:14px;
+}
  
 @media (max-width: 769px) {
 	h1, h2, h3, h4, h5, h6 {
