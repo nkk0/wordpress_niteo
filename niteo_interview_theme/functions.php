@@ -35,4 +35,15 @@ function themeprefix_first_paragraph() {
   return '<p>' . $first_paragraph_str . '</p>';
 }
 
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'Name of Widgetized Area',
+    'id' => 'sidebar-1',
+    'before_widget' => '<div class = "widgetizedArea">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  )
+);
+
 ?>
