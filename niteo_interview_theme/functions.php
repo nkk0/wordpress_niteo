@@ -12,6 +12,8 @@ function register_theme_menus() {
 
 add_action('init', 'register_theme_menus');
 
+remove_filter('the_content', 'wptexturize');
+
 function niteo_theme_styles() {
   wp_enqueue_style('normalize_css', get_template_directory_uri() . '/css/normalize.css');
   wp_enqueue_style('foundation_css', get_template_directory_uri() . '/css/foundation.min.css');
