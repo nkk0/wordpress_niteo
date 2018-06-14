@@ -8,7 +8,7 @@
 
     <title><?php if (is_home()) {echo get_bloginfo('name');} else {wp_title();}?></title>
 
-    <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_url(); ?>/style.css" rel="stylesheet">
 
     <?php wp_head(); ?>
   </head>
@@ -41,7 +41,7 @@
             </div>
           <?php else: ?>
             <?php wp_nav_menu(); ?>
-          <? endif; ?>
+          <?php endif; ?>
 
         </nav>
       </div>
