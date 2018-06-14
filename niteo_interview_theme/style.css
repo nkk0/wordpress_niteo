@@ -24,6 +24,10 @@
   word-wrap: break-word;
 }
 
+pre {
+  margin: 20px 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #555;
