@@ -381,15 +381,21 @@ label {
     float: none;
     width: 100%;
   }
+  .menu-main-menu-container,
+  .menu-short-container,
   .menu-all-pages-container {
-		display: flex;
-		justify-content: center;
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
+  .menu-main-menu-container ul,
+  .menu-short-container ul,
   .menu-all-pages-container ul {
     margin: auto;
     padding: 10px 0 0 0;
   }
+  .menu-main-menu-container ul li a,
+  .menu-short-container ul li a,
   .menu-all-pages-container ul li a {
     font-size: 25px;
   }
