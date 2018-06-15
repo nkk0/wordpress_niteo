@@ -1,7 +1,7 @@
 # Programmer Blog Theme
 
 This theme is meant to be used as a personal blog for a programmer. You can install the theme like any other, by installing the `.zip` file from your WordPress dashboard.  
-After installing, you should go to `Appearance > Customize > Site Identitiy` and upload a logo image for your blog. The logo should be square and will be resized down to 70x70px.  
+After installing, you should go to `Appearance > Customize > Site Identitiy` and upload a logo image for your blog. The logo should be square and will be resized down to 70x70px. Also, if any widgets are installed in the footer by default, you should go to `Appearance > Widgets` and drag the individual widgets out of the footer. 
 
 ## Testing the theme
 
