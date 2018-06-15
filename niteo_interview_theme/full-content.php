@@ -3,7 +3,10 @@
     <?php the_title(); ?>
   </h2>
 
-  <?php the_content(); ?>
-  <?php if (get_the_tags()) {the_tags();} ?>
+  <p>
+    <?php the_content(); ?>
+    <br/>
+    <?php if (get_the_tags()) {the_tags();} ?>
+  </p>
 
 </div><!-- /.blog-post -->

@@ -12,6 +12,7 @@ function register_theme_menus() {
 
 add_action('init', 'register_theme_menus');
 
+// Remove wordpress built in quote styling
 remove_filter('the_content', 'wptexturize');
 
 function niteo_theme_styles() {
@@ -30,6 +31,7 @@ function niteo_theme_js() {
 
 add_action('wp_enqueue_scripts', 'niteo_theme_js');
 
+// Custom function to extract preview paragraph for post index page
 function themeprefix_first_paragraph() {
   $first_paragraph_str = wpautop(get_the_content());
   $first_paragraph_str = substr($first_paragraph_str, 0, strpos($first_paragraph_str, '</p>') + 4);
@@ -37,9 +39,9 @@ function themeprefix_first_paragraph() {
   return '<p>' . $first_paragraph_str . '</p>';
 }
 
-if ( function_exists('register_sidebar') )
+if (function_exists('register_sidebar'))
   register_sidebar(array(
-    'name' => 'Name of Widgetized Area',
+    'name' => 'Footer Widgets',
     'id' => 'sidebar-1',
     'before_widget' => '<div class = "widgetizedArea">',
     'after_widget' => '</div>',

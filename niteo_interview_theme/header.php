@@ -26,6 +26,7 @@
 
         <nav class="blog-nav">
           <?php
+          // Check how many menu items nav bar is displaying, switch to dropdown style if too many to fit
           $count_posts = wp_count_posts('page');
           $number_of_menu_items = $count_posts->publish;
           ?>
