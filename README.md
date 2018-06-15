@@ -5,7 +5,7 @@ After installing, you should go to `Appearance > Customize > Site Identitiy` and
 
 ## Testing the theme
 
-To test the theme, navigate to `Tools > Import` in your WordPress dashboard and scroll down to `WordPress`, click `Install` and after it finishes click `Run Importer`. Upload the `tests/theme_unit_test.wordpress.xml` file located in the theme directory. That will add posts and pages that will test the layout and functionality of the site.
+To test the theme, navigate to `Tools > Import` in your WordPress dashboard and scroll down to `WordPress`, click `Install` and after it finishes click `Run Importer`. Upload the `tests/theme_unit_test.wordpress.xml` file located in the theme directory. Leave `Download and import file attachments` unchecked. It will now add posts and pages that will test the layout and functionality of the site.
 
 
 # Syntax Highlighter Plugin
