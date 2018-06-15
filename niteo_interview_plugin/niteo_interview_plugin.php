@@ -25,6 +25,7 @@ class SyntaxHighlighter {
         $newstring = preg_replace_callback($pattern,'self::highlight_code_block',$input);
 
         // replace the invisible 'nbsp' character with an empty string
+        $newstring = str_replace(";=", '=', $newstring);
         $newstring = str_replace("&amp;gt", '>', $newstring);
         $newstring = str_replace("&amp;lt", '<', $newstring);
         $newstring = str_replace("&amp;</span>gt", '></span>', $newstring);
