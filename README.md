@@ -20,7 +20,8 @@ Some text
 <empty line>
 More text
 ````
-You can also put a space between the backticks and the language and that will still work, but the code should be on it's own line(s), not on the same line as the backticks.
+You can also put a space between the backticks and the language and that will still work, but the code should be on it's own line(s), not on the same line as the backticks.  
+Make sure you are using the `Text` and not the `Visual` editor when writing/pasting code, or WordPress will remove the indentation.
 
 ## Testing the plugin
 
