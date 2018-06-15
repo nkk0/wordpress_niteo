@@ -2,7 +2,7 @@
 </div><!-- /.container -->
 
     <footer class="blog-footer">
-      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("Name of Widgetized Area") ) : ?>
+      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Widgets") ) : ?>
       <?php endif;?>
 
       <?php if (!wp_get_sidebars_widgets()['sidebar-1']) : ?>
