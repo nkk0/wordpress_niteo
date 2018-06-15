@@ -13,9 +13,12 @@ To test the theme, navigate to `Tools > Import` in your WordPress dashboard and 
 The theme comes with a plugin that is used to highlight code blocks inside of blog posts. After putting the plugin inside your WordPress installs `Plugins` directory, you can navigate to `Plugins > Installed Plugins` in your WordPress dashboard, find the `Niteo Interview Text Highlighter` and `activate` it.  
 Whenever a post is rendered, the plugin will look for a block of code surrounded by 3 backticks ```` ``` ```` and the programming language of the code block after the first set of backticks like:  
 ````
+Some text
 ```python
 <<< CODE >>>
 ```
+<empty line>
+More text
 ````
 You can also put a space between the backticks and the language and that will still work, but the code should be on it's own line(s), not on the same line as the backticks.
 
